@@ -1,1 +1,88 @@
 @import "global.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 80px 0 45px 0;
+  font-family: system-ui;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  background: skyblue;
+  color: lemonchiffon;
+  /* height: 80px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  /* padding: 10px; */
+  top: 0;
+  width: 100vw;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  background: lemonchiffon;
+  flex-flow: column wrap;
+}
+
+.card {
+  margin: 5% 5%;
+  border: 1px solid #252629;
+  padding: 5%;
+  scroll-margin-top: 100px;
+  /* border-radius: 2rem; */
+
+  /* z-index: -1; */
+  width: 100vw;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* .card__bookmark {
+  border: 0 solid transparent;
+  padding: 6px 12px;
+  position: fixed;
+  right: 0;
+  top: 0;
+} */
+
+.answer {
+  visibility: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.navbar__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: skyblue;
+}
+
+.navbar-link {
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.navbar-link:hover {
+  color: pink;
+}
+
+.navbar__image {
+  height: 50px;
+}
