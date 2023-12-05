@@ -10,10 +10,12 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 70px 0 45px 0;
+  margin: 80px 0 45px 0;
   font-family: system-ui;
   background: lemonchiffon;
 }
+
+/* HEADER */
 
 .header {
   display: flex;
@@ -26,6 +28,7 @@ body {
   width: 100vw;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 main {
@@ -33,16 +36,17 @@ main {
   flex-flow: column wrap;
 }
 
-/* Question Cards */
+/* QUESTION CARDS */
 
 .card {
-  margin: 5px 15px;
+  margin: 10px 25px;
   border: 1px solid #252629;
   padding: 5%;
   scroll-margin-top: 100px;
   border-radius: 1rem;
   background: white;
   text-align: center;
+  position: relative;
 }
 
 .card__question {
@@ -52,15 +56,27 @@ main {
 .card__button {
   padding: 10px;
   border-radius: 5px;
+  color: #fafad2;
+  background-color: #db7093;
+  border-color: transparent;
+  padding: 10px 25px;
+  border-radius: 25px;
 }
 
 .card__bookmark {
   border: 0 solid transparent;
   padding: 6px 12px;
-  /* position: fixed; */
+  position: absolute;
   right: 0;
   top: 0;
   height: 50px;
+}
+
+.card__bookmark-placement {
+  border: 0 solid transparent;
+  position: absolute;
+  right: 25px;
+  top: -15px;
 }
 
 .answer {
@@ -81,9 +97,10 @@ main {
   margin: 2px;
   border-radius: 5px;
   font-size: 0.8em;
+  color: #fafad2;
 }
 
-/* Footer: Navigation Bar */
+/* FOOTER: Navigation Bar */
 
 .navbar {
   display: flex;
