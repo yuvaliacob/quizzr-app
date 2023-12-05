@@ -33,7 +33,7 @@ body {
 
 main {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
 }
 
 /* QUESTION CARDS */
@@ -50,7 +50,7 @@ main {
 }
 
 .card__question {
-  padding: 20px 10px;
+  padding: 20px 0 0 0;
 }
 
 .card__button {
@@ -60,6 +60,7 @@ main {
   background-color: #db7093;
   border-color: transparent;
   padding: 10px 25px;
+  margin: 35px 0;
   border-radius: 25px;
 }
 
@@ -80,7 +81,7 @@ main {
 }
 
 .answer {
-  visibility: hidden;
+  display: none;
 }
 
 /* Hashtags */
@@ -123,7 +124,7 @@ main {
 }
 
 .navbar__link:hover {
-  background-color: lightcoral;
+  background-color: rgb(135, 190, 235);
 }
 
 .navbar__image {

@@ -7,11 +7,50 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- HEADER -->
+
     <header class="header">
       <h1>Quiz App</h1>
     </header>
 
     <main>
+      <!-- BEGIN MAIN ELEMENT -->
+
+      <!-- 
+        
+        *** GENERIC QUESTION CARD ***
+
+        <section class="card">
+        <section class="question">
+          <h3 class="card__question">QUESTION</h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
+            Show Answer
+          </button>
+        </section>
+        <section class="answer">
+          <h3 class="card__answer">ANSWER</h3>
+          <button aria-label="Click to hide answer" class="card__button">
+            Hide Answer
+          </button>
+        </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#HASHTAG</li>
+          <li class="card__hashtag">#HASHTAG</li>
+          <li class="card__hashtag">#HASHTAG</li>
+        </ul>
+      </section> 
+    
+    -->
+
+      <!-- QUESTION #1 -->
+
       <section class="card">
         <section class="question">
           <h3 class="card__question">What does CSS stand for?</h3>
@@ -34,45 +73,58 @@
         </section>
         <ul class="card__hashtags-list">
           <li class="card__hashtag">#html</li>
-          <li class="card__hashtag">#flexbox</li>
           <li class="card__hashtag">#css</li>
+          <li class="card__hashtag">#lingo</li>
         </ul>
       </section>
 
+      <!-- QUESTION #2 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
           <h3 class="card__question">
             Which HTML tag is used to link an external CSS file to an HTML
             document?
           </h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
         <section class="answer">
-          <h3 class="card__answer">&lt;html&gt;</h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <h3 class="card__answer">&lt;link&gt;</h3>
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#html</li>
+          <li class="card__hashtag">#tags</li>
+          <li class="card__hashtag">#css</li>
+        </ul>
       </section>
 
+      <!-- QUESTION #3 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
           <h3 class="card__question">
             What is the purpose of the HTML &lt;div&gt; element?
           </h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
@@ -80,132 +132,243 @@
           <h3 class="card__answer">
             It is a container element used to group and style content together.
           </h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#css</li>
+          <li class="card__hashtag">#html</li>
+          <li class="card__hashtag">#div</li>
+        </ul>
       </section>
 
+      <!-- QUESTION #4 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
-          <h3 class="card__question">What does CSS stand for?</h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <h3 class="card__question">
+            Which CSS property is used to change the text color of an element?
+          </h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
         <section class="answer">
-          <h3 class="card__answer">Cascading Style Sheets</h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <h3 class="card__answer">color</h3>
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#html</li>
+          <li class="card__hashtag">#color</li>
+          <li class="card__hashtag">#elements</li>
+        </ul>
       </section>
 
+      <!-- QUESTION #5 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
-          <h3 class="card__question">What does CSS stand for?</h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <h3 class="card__question">
+            What is the default display property for most HTML elements?
+          </h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
         <section class="answer">
-          <h3 class="card__answer">Cascading Style Sheets</h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <h3 class="card__answer">block</h3>
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#html</li>
+          <li class="card__hashtag">#display</li>
+          <li class="card__hashtag">#elements</li>
+        </ul>
       </section>
 
+      <!-- QUESTION #6 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
-          <h3 class="card__question">What does CSS stand for?</h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <h3 class="card__question">
+            How can you center an element horizontally in CSS?
+          </h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
         <section class="answer">
-          <h3 class="card__answer">Cascading Style Sheets</h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <h3 class="card__answer">By setting its margin property to auto.</h3>
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#css</li>
+          <li class="card__hashtag">#elements</li>
+          <li class="card__hashtag">#html</li>
+        </ul>
       </section>
 
+      <!-- QUESTION #7 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
-          <h3 class="card__question">What does CSS stand for?</h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <h3 class="card__question">
+            What is the CSS pseudo-class used to select the first child of an
+            element?
+          </h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
         <section class="answer">
-          <h3 class="card__answer">Cascading Style Sheets</h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <h3 class="card__answer">:first-child</h3>
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#css</li>
+          <li class="card__hashtag">#children</li>
+          <li class="card__hashtag">#classes</li>
+        </ul>
       </section>
 
+      <!-- QUESTION #8 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
-          <h3 class="card__question">What does CSS stand for?</h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <h3 class="card__question">
+            Which HTML tag is used to create an ordered (numbered) list?
+          </h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
         <section class="answer">
-          <h3 class="card__answer">Cascading Style Sheets</h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <h3 class="card__answer">&lt;ol&gt;</h3>
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#html</li>
+          <li class="card__hashtag">#allesinordnung</li>
+          <li class="card__hashtag">#lists</li>
+        </ul>
       </section>
 
+      <!-- QUESTION #9 -->
+
       <section class="card">
-        <img
-          class="card__bookmark"
-          src="./resources/bookmark.png"
-          alt="Bookmark"
-        />
         <section class="question">
-          <h3 class="card__question">What does CSS stand for?</h3>
-          <button aria-label="Click to show answer" class="card__show-answer">
+          <h3 class="card__question">
+            In CSS, what property is used to control the spacing between lines
+            of text within an element?
+          </h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
             Show Answer
           </button>
         </section>
         <section class="answer">
-          <h3 class="card__answer">Cascading Style Sheets</h3>
-          <button aria-label="Click to hide answer" class="card__hide-answer">
+          <h3 class="card__answer">line-height</h3>
+          <button aria-label="Click to hide answer" class="card__button">
             Hide Answer
           </button>
         </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#css</li>
+          <li class="card__hashtag">#spacing</li>
+          <li class="card__hashtag">#elements</li>
+        </ul>
       </section>
+
+      <!-- QUESTION #10 -->
+
+      <section class="card">
+        <section class="question">
+          <h3 class="card__question">
+            What does the term "responsive web design" refer to?
+          </h3>
+          <button class="card__bookmark-placement">
+            <img
+              class="card__bookmark"
+              src="./resources/bookmark.png"
+              alt="Bookmark"
+            />
+          </button>
+          <button aria-label="Click to show answer" class="card__button">
+            Show Answer
+          </button>
+        </section>
+        <section class="answer">
+          <h3 class="card__answer">
+            It refers to designing web pages that adapt and display well on
+            various screen sizes and devices.
+          </h3>
+          <button aria-label="Click to hide answer" class="card__button">
+            Hide Answer
+          </button>
+        </section>
+        <ul class="card__hashtags-list">
+          <li class="card__hashtag">#html</li>
+          <li class="card__hashtag">#css</li>
+          <li class="card__hashtag">#design</li>
+        </ul>
+      </section>
+
+      <!-- END OF MAIN ELEMENT -->
     </main>
+
+    <!-- FOOTER -->
 
     <footer>
       <nav class="navbar">
