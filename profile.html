@@ -4,32 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Profile</title>
+    <title>Yuval's Quiz App</title>
   </head>
   <body>
-    <picture class="profile_pic"
-      ><img src="./resources/yuval.jpg" alt="Yuval"
-    /></picture>
-    <h1>Yuval Iacob</h1>
-    <article>
-      <h3>About Me</h3>
-      <p>
-        Hi, I'm Yuval. I worked in the Internet and software industry for most
-        of my career, starting at the age of 18, working in different positions
-        and fields. Somewhere in the middle there I had a few years where I did
-        several odd jobs working in bars, night clubs and even air planes before
-        coming back to software. Sitting in a fancy office is quite comfortable,
-        but dancing around all night and getting paid for it had it's charm.
-        Clouds are really cool too.
-      </p>
-    </article>
-    <ul>
-      <li><img src="./resources/question.png" alt="Questions icon" />10</li>
-      <li>
-        <img src="./resources/bookmark_filled.png" alt="Bookmarks icon" />4
-      </li>
-    </ul>
-    <h2>Settings</h2>
-    <h3>Dark Mode</h3>
+    <!-- HEADER -->
+
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+
+    <main class="main__profile">
+      <!-- BEGIN MAIN ELEMENT -->
+
+      <section class="profile__top">
+        <img class="profile_pic" src="./resources/yuval.png" alt="Yuval" />
+        <h1 class="name">Yuval Iacob</h1>
+      </section>
+      <article class="about-me">
+        <h3 class="about-title">About Me</h3>
+        <p class="about-text">
+          Hi, I'm Yuval. I'm learning how to become a web developer. I just
+          created this little quiz app! Wow-wee. It's the first site I've built
+          a website in about least 10-15 years. But back then I only knew some
+          basic stuff. Anyway, I like music a lot and am a big fan of water.
+        </p>
+      </article>
+      <ul class="counter__buttons">
+        <li class="counter">
+          <img
+            class="icon"
+            src="./resources/question.png"
+            alt="Questions icon"
+          />10
+        </li>
+        <li class="counter">
+          <img
+            class="icon"
+            src="./resources/bookmark_filled.png"
+            alt="Bookmarks icon"
+          />4
+        </li>
+      </ul>
+      <section class="settings">
+        <h2>Settings</h2>
+        <h3 class="dark-option">Dark Mode</h3>
+      </section>
+
+      <!-- END OF MAIN ELEMENT -->
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__link">
+            <a href="index.html"
+              ><img class="navbar__image" src="./resources/home.png" alt="Home"
+            /></a>
+          </li>
+
+          <li class="navbar__link">
+            <a href="bookmarks.html"
+              ><img
+                class="navbar__image"
+                src="./resources/bookmark_transparent.png"
+                alt="Home"
+            /></a>
+          </li>
+
+          <li class="navbar__link">
+            <a href="profile.html"
+              ><img
+                class="navbar__image"
+                src="./resources/profile_filled.png"
+                alt="Home"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -133,6 +133,66 @@ main {
 
 /* PROFILE PAGE */
 
+.main__profile {
+  padding: 0 20px;
+  margin: 0 20px;
+}
+
+.profile__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .profile_pic {
-  height: 100px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid lightcoral;
+}
+
+.name {
+  font-size: 36pt;
+  margin: 0 0 0 30px;
+}
+
+.about-me {
+  margin: 20px 0;
+}
+
+.about-title {
+  margin-bottom: 10px;
+}
+
+/* COUNTER BUTTONS */
+
+.counter__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightcoral;
+  padding: 10px 25px;
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #fafad2;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.icon {
+  height: 20px;
+  margin: 0 5px;
+}
+
+.settings {
+  margin-top: 20px;
+}
+
+.dark-option {
+  margin-top: 10px;
 }
