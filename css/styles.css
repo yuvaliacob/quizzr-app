@@ -10,10 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 80px 0 60px 0;
+  margin: 70px 0 45px 0;
   font-family: system-ui;
-  align-items: center;
-  flex-grow: 1;
+  background: lemonchiffon;
 }
 
 .header {
@@ -21,9 +20,8 @@ body {
   position: fixed;
   background: skyblue;
   color: lemonchiffon;
-  height: 80px;
+  height: 60px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-  /* padding: 15px; */
   top: 0;
   width: 100vw;
   justify-content: center;
@@ -32,10 +30,10 @@ body {
 
 main {
   display: flex;
-  background: lemonchiffon;
   flex-flow: column wrap;
-  padding: 1vw;
 }
+
+/* Question Cards */
 
 .card {
   margin: 5px 15px;
@@ -44,15 +42,17 @@ main {
   scroll-margin-top: 100px;
   border-radius: 1rem;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-/* .card__question {
+.card__question {
+  padding: 20px 10px;
+}
 
-} */
+.card__button {
+  padding: 10px;
+  border-radius: 5px;
+}
 
 .card__bookmark {
   border: 0 solid transparent;
@@ -67,16 +67,33 @@ main {
   visibility: hidden;
 }
 
+/* Hashtags */
+
+.card__hashtags-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card__hashtag {
+  display: flex;
+  background-color: lightcoral;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+/* Footer: Navigation Bar */
+
 .navbar {
   display: flex;
-  justify-content: center;
   position: fixed;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px; */
 }
 
 .navbar__menu {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -85,16 +102,13 @@ main {
 
 .navbar__link {
   display: flex;
-  padding: 5px;
-  color: white;
+  padding: 5px 40px;
 }
 
-/* .navbar-link:hover {
-  color: pink;
-} */
+.navbar__link:hover {
+  background-color: lightcoral;
+}
 
 .navbar__image {
-  height: 50px;
-  border-color: red;
-  background-color: transparent;
+  height: 40px;
 }
