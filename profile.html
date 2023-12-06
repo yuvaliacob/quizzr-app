@@ -48,7 +48,10 @@
       <h1>Settings</h1>
       <section class="settings">
         <h2 class="dark-option">Dark Mode</h2>
-        <div class="darkmode-toggle"></div>
+        <div
+          aria-label="Click to toggle Dark Mode"
+          class="darkmode-toggle"
+        ></div>
 
         <!-- <input type="checkbox" id="darkmode-toggle" />
         <label for="darkmode-toggle" class="darkmode"></label> -->
@@ -62,27 +65,27 @@
     <footer>
       <nav class="navbar">
         <ul class="navbar__menu">
-          <li class="navbar__link">
+          <li aria-label="Click to go to Home page" class="navbar__link">
             <a href="index.html"
               ><img class="navbar__image" src="./resources/home.png" alt="Home"
             /></a>
           </li>
 
-          <li class="navbar__link">
+          <li aria-label="Click to go to Bookmarks page" class="navbar__link">
             <a href="bookmarks.html"
               ><img
                 class="navbar__image"
                 src="./resources/bookmark_transparent.png"
-                alt="Home"
+                alt="Bookmarks"
             /></a>
           </li>
 
-          <li class="navbar__link">
+          <li aria-label="Click to go to Personal page" class="navbar__link">
             <a href="profile.html"
               ><img
                 class="navbar__image"
                 src="./resources/profile_filled.png"
-                alt="Home"
+                alt="Profile"
             /></a>
           </li>
         </ul>
