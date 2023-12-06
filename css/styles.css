@@ -31,6 +31,7 @@ body {
   color: lemonchiffon;
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  text-shadow: 2px 2px 3px rgba(240, 128, 128, 0.5);
   top: 0;
   width: 100vw;
   justify-content: center;
