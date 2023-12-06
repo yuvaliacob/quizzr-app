@@ -150,6 +150,7 @@ main {
 .navbar__link {
   display: flex;
   padding: 7px 40px;
+  cursor: pointer;
 }
 
 .navbar__link:hover {
