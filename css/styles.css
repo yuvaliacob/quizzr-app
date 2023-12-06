@@ -86,6 +86,15 @@ main {
   font-size: 12pt;
 }
 
+@media (prefers-color-scheme: dark) {
+  .card__button {
+    background: #252629;
+    box-shadow: #db7093 0 1px 3px;
+    color: #db7093;
+    /* border: 2px solid lightcoral; */
+  }
+}
+
 .card__bookmark {
   border: 0 solid transparent;
   padding: 6px 12px;
@@ -121,6 +130,14 @@ main {
   border-radius: 5px;
   font-size: 0.8em;
   color: #fafad2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card__hashtag {
+    background: #252629;
+    box-shadow: lightcoral 0 1px 3px;
+    color: lightcoral;
+  }
 }
 
 /* FOOTER: Navigation Bar */
