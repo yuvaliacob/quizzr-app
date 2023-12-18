@@ -331,7 +331,7 @@ main {
 
 form {
   display: grid;
-  width: 90%;
+  width: 100vw;
   margin: 5px auto;
   padding: 10px;
   border-radius: 5px;
