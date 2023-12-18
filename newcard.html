@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="./js/newcard.js" defer></script>
     <title>Quizzr: Create New Question Card</title>
   </head>
   <body>
@@ -17,20 +17,34 @@
     <main>
       <!-- BEGIN MAIN ELEMENT -->
 
-      <form>
+      <form data-js="form">
         <fieldset class="card">
           <legend>New Question Card</legend>
 
           <label for="firstname">Question:</label>
           <textarea
             type="text"
-            name="question"
-            id="question"
+            name="new-question"
+            id="new-question"
+            maxlength="150"
+            data-js="new-question"
             required
           ></textarea>
 
+          <p class="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left
+          </p>
+
           <label for="lastname">Answer:</label>
-          <textarea type="text" name="answer" id="answer" required></textarea>
+          <textarea
+            type="text"
+            name="answer"
+            id="answer"
+            maxlength="150"
+            required
+          ></textarea>
+
+          <p class="remaining-characters"><span>150</span> characters left</p>
 
           <label for="birthday">Tag:</label>
           <input type="text" name="tag" id="tag" required />
@@ -65,12 +79,11 @@
             aria-label="Click to create a new question card"
             class="navbar__link"
           >
-            <a href="form.html"
-              ><img
-                class="navbar__image"
-                src="./resources/add_filled.png"
-                alt="New Card"
-            /></a>
+            <img
+              class="navbar__image"
+              src="./resources/add_filled.png"
+              alt="New Card"
+            />
           </li>
 
           <li aria-label="Click to go to Profile page" class="navbar__link">

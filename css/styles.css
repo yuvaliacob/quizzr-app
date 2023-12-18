@@ -322,7 +322,6 @@ form {
   width: 90%;
   margin: 5px auto;
   padding: 10px;
-  /* border: 1px solid var(--black); */
   border-radius: 5px;
 }
 
@@ -330,7 +329,7 @@ fieldset {
   display: grid;
   gap: 5px;
   border-radius: 5px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--pink);
 }
 
 .submit {
@@ -348,14 +347,26 @@ legend {
   color: var(--yellow);
   padding: 0.5rem;
   border-radius: 10px;
-  border: 1px solid var(--black);
+  /* border: 1px solid var(--black); */
+}
+
+label {
+  padding: 10px 0 0 0;
 }
 
 textarea {
-  border-radius: 10px;
+  border-radius: 8px;
+  padding: 5px 5px;
 }
 
 input[type="text"] {
-  border-radius: 10px;
+  border-radius: 8px;
   margin: auto;
+  padding: 2px 5px;
+}
+
+.remaining-characters {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: right;
 }
