@@ -121,6 +121,18 @@ main {
   top: -15px;
 }
 
+.card__answer {
+  border: 2px solid var(--salmon);
+  background-color: var(--yellow);
+  padding: 10% 5%;
+  margin: -15px 0 20px 0;
+  border-radius: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .answer {
   display: none;
 }
