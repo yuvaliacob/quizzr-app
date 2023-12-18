@@ -1,17 +1,26 @@
 console.clear();
 
-// FORM DATA //
+// CHARACTER COUNTER //
 
 const MAX_CHARACTERS = 150;
 
-const form = document.querySelector('[data-js="form"]');
-const questionInput = document.querySelector('[data-js="question"]');
+const textareas = document.querySelectorAll("textarea");
 
-const characterLeftElement = document.querySelector(
-  '[data-js="remaining-characters"]'
-);
+textareas.forEach((textarea) => {
+  textarea.addEventListener("input", function () {
+    const count = textarea.nextElementSibling;
+
+    count.textContent =
+      MAX_CHARACTERS - parseInt(textarea.value.length) + " characters left";
+  });
+});
+
+// FORM DATA PROCESSING//
+
+const form = document.querySelector('[data-js="form"]');
 
 form.addEventListener("submit", (event) => {
+  // Prevent default browser behavior
   event.preventDefault();
 
   const formData = new FormData(event.target);
@@ -86,12 +95,6 @@ form.addEventListener("submit", (event) => {
     answerSection.classList.toggle("hidden");
   });
 
+  // Reset input values
   event.target.reset();
-});
-
-questionInput.addEventListener("input", (e) => {
-  // console.log("Press");
-  // console.log("What I type: ", e.target.value.length);
-  characterLeftElement.textContent =
-    MAX_CHARACTERS - parseInt(e.target.value.length);
 });
