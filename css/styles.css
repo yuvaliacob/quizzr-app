@@ -1,5 +1,14 @@
 @import "global.css";
 
+:root {
+  --black: #252629;
+  --pink: #db7093;
+  --salmon: lightcoral;
+  --yellow: lemonchiffon;
+
+  /* #fafad2 */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,13 +21,13 @@ body {
   flex-wrap: wrap;
   margin: 80px 0 65px 0;
   font-family: system-ui;
-  background: lemonchiffon;
+  background: var(--yellow);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #252629;
-    color: lemonchiffon;
+    background: var(--black);
+    color: var(--yellow);
   }
 }
 
@@ -28,7 +37,7 @@ body {
   display: flex;
   position: fixed;
   background: skyblue;
-  color: lemonchiffon;
+  color: var(--yellow);
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   text-shadow: 2px 2px 3px rgba(240, 128, 128, 0.5);
@@ -41,8 +50,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .header {
-    background: #252629;
-    box-shadow: lemonchiffon 0 1px 10px;
+    background: var(--black);
+    box-shadow: var(--yellow) 0 1px 10px;
   }
 }
 
@@ -55,7 +64,7 @@ main {
 
 .card {
   margin: 10px 25px;
-  border: 1px solid #252629;
+  border: 1px solid var(--black);
   padding: 5%;
   scroll-margin-top: 100px;
   border-radius: 1rem;
@@ -66,8 +75,8 @@ main {
 
 @media (prefers-color-scheme: dark) {
   .card {
-    background: #252629;
-    box-shadow: lemonchiffon 0 1px 10px;
+    background: var(--black);
+    box-shadow: var(--yellow) 0 1px 10px;
   }
 }
 
@@ -79,7 +88,7 @@ main {
   padding: 10px;
   border-radius: 5px;
   color: #fafad2;
-  background-color: #db7093;
+  background-color: var(--pink);
   border-color: transparent;
   padding: 8px 25px;
   margin: 35px 0;
@@ -89,10 +98,10 @@ main {
 
 @media (prefers-color-scheme: dark) {
   .card__button {
-    background: #252629;
-    box-shadow: #db7093 0 1px 3px;
-    color: #db7093;
-    /* border: 2px solid lightcoral; */
+    background: var(--black);
+    box-shadow: var(--pink) 0 1px 3px;
+    color: var(--pink);
+    /* border: 2px solid var(--salmon); */
   }
 }
 
@@ -125,19 +134,19 @@ main {
 
 .card__hashtag {
   display: flex;
-  background-color: lightcoral;
+  background-color: var(--salmon);
   padding: 5px 10px;
   margin: 2px;
   border-radius: 5px;
   font-size: 0.8em;
-  color: #fafad2;
+  color: var(--yellow);
 }
 
 @media (prefers-color-scheme: dark) {
   .card__hashtag {
-    background: #252629;
-    box-shadow: lightcoral 0 1px 3px;
-    color: lightcoral;
+    background: var(--black);
+    box-shadow: var(--salmon) 0 1px 3px;
+    color: var(--salmon);
   }
 }
 
@@ -160,14 +169,14 @@ main {
 
 @media (prefers-color-scheme: dark) {
   .navbar__menu {
-    background: #252629;
-    box-shadow: lemonchiffon 0 1px 10px;
+    background: var(--black);
+    box-shadow: var(--yellow) 0 1px 10px;
   }
 }
 
 .navbar__link {
   display: flex;
-  padding: 7px 40px;
+  padding: 7px 25px;
   cursor: pointer;
 }
 
@@ -177,8 +186,8 @@ main {
 
 @media (prefers-color-scheme: dark) {
   .navbar__link:hover {
-    background: lemonchiffon;
-    box-shadow: lemonchiffon 0 1px 10px;
+    background: var(--yellow);
+    box-shadow: var(--yellow) 0 1px 10px;
   }
 }
 
@@ -203,7 +212,7 @@ main {
 .profile_pic {
   height: 120px;
   border-radius: 50%;
-  border: 2px solid lightcoral;
+  border: 2px solid var(--salmon);
 }
 
 .name {
@@ -229,20 +238,20 @@ main {
 .counter {
   display: flex;
   justify-content: space-between;
-  background-color: lightcoral;
+  background-color: var(--salmon);
   padding: 10px 25px;
   margin: 0 0 20px 0;
   border-radius: 5px;
   font-size: 1em;
-  color: #fafad2;
+  color: var(--yellow);
   /* border: 1px solid black; */
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
 @media (prefers-color-scheme: dark) {
   .counter {
-    background: #252629;
-    box-shadow: lemonchiffon 0 1px 10px;
+    background: var(--black);
+    box-shadow: var(--yellow) 0 1px 10px;
   }
 }
 
@@ -272,7 +281,7 @@ main {
 } */
 
 .darkmode-toggle {
-  background: #db7093;
+  background: var(--pink);
   width: 45px;
   height: 25px;
   border-radius: 200px;
@@ -283,8 +292,8 @@ main {
 
 @media (prefers-color-scheme: dark) {
   .darkmode-toggle {
-    background: lemonchiffon;
-    box-shadow: lemonchiffon 0 1px 5px;
+    background: var(--yellow);
+    box-shadow: var(--yellow) 0 1px 5px;
   }
 }
 
@@ -301,7 +310,52 @@ main {
 
 @media (prefers-color-scheme: dark) {
   .darkmode-toggle::before {
-    background: #252629;
-    /* box-shadow: lemonchiffon 0 1px 10px; */
+    background: var(--black);
+    /* box-shadow: var(--yellow) 0 1px 10px; */
   }
+}
+
+/* ADD CARD FORM */
+
+form {
+  display: grid;
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px;
+  /* border: 1px solid var(--black); */
+  border-radius: 5px;
+}
+
+fieldset {
+  display: grid;
+  gap: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+.submit {
+  margin-top: 0.5rem;
+  background-color: var(--pink);
+  color: var(--yellow);
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  padding: 7px;
+}
+
+legend {
+  background-color: var(--pink);
+  color: var(--yellow);
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--black);
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  margin: auto;
 }
