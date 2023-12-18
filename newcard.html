@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/newcard.js" defer></script>
+    <title>Quizzr: Create New Question Card</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <h1>Quizzr</h1>
+    </header>
+
+    <main>
+      <!-- BEGIN MAIN ELEMENT -->
+
+      <form data-js="form">
+        <fieldset class="card">
+          <legend>New Question Card</legend>
+
+          <label for="firstname">Question:</label>
+          <textarea
+            type="text"
+            name="new-question"
+            id="new-question"
+            maxlength="150"
+            data-js="new-question"
+            required
+          ></textarea>
+
+          <p class="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left
+          </p>
+
+          <label for="lastname">Answer:</label>
+          <textarea
+            type="text"
+            name="answer"
+            id="answer"
+            maxlength="150"
+            required
+          ></textarea>
+
+          <p class="remaining-characters"><span>150</span> characters left</p>
+
+          <label for="birthday">Tag:</label>
+          <input type="text" name="tag" id="tag" required />
+
+          <button type="submit" class="submit">Submit</button>
+        </fieldset>
+      </form>
+
+      <!-- END OF MAIN ELEMENT -->
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li aria-label="Click to go to Home page" class="navbar__link">
+            <a href="index.html"
+              ><img class="navbar__image" src="./resources/home.png" alt="Home"
+            /></a>
+          </li>
+
+          <li aria-label="Click to go to Bookmarks page" class="navbar__link">
+            <img
+              class="navbar__image"
+              src="./resources/bookmark_transparent.png"
+              alt="Bookmarks"
+            />
+          </li>
+
+          <li
+            aria-label="Click to create a new question card"
+            class="navbar__link"
+          >
+            <img
+              class="navbar__image"
+              src="./resources/add_filled.png"
+              alt="New Card"
+            />
+          </li>
+
+          <li aria-label="Click to go to Profile page" class="navbar__link">
+            <a href="profile.html"
+              ><img
+                class="navbar__image"
+                src="./resources/profile.png"
+                alt="Profile"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
