@@ -1,4 +1,5 @@
 console.clear();
+
 const MAX_CHARACTERS = 150;
 
 const form = document.querySelector('[data-js="form"]');

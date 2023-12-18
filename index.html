@@ -55,6 +55,9 @@
       <section class="card">
         <section class="question">
           <h3 class="card__question">What does CSS stand for?</h3>
+
+          <!-- BOOKMARK -->
+
           <button
             aria-label="Click to bookmark this card"
             class="card__bookmark-placement"
@@ -65,15 +68,22 @@
               alt="Bookmark"
             />
           </button>
-          <button aria-label="Click to show answer" class="card__button">
+
+          <!-- SHOW ANSWER BUTTON -->
+
+          <button
+            aria-label="Click to show answer"
+            class="card__button"
+            data-js="show-answer-button"
+          >
             Show Answer
           </button>
         </section>
-        <section class="answer">
+
+        <!-- ANSWER #1 -->
+
+        <section class="hidden" data-js="answer">
           <h3 class="card__answer">Cascading Style Sheets</h3>
-          <button aria-label="Click to hide answer" class="card__button">
-            Hide Answer
-          </button>
         </section>
         <ul class="card__hashtags-list">
           <li class="card__hashtag">#html</li>
