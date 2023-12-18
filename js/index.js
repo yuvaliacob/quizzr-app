@@ -2,15 +2,15 @@
 
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 
-const bookmarkImage = document.querySelector('[data-js="bookmark-image"]');
-
-bookmarkButton.addEventListener("click", toggleBookmarkButton);
-
 function toggleBookmarkButton(e) {
-  e.target.src == "./resources/bookmark_filled.png"
-    ? (e.target.src = "./resources/bookmark.png") // true
-    : (e.target.src = "./resources/bookmark_filled.png"); // false
+  e.target.src ==
+  "https://yuvaliacob.github.io/yuval-quiz-app/resources/bookmark.png"
+    ? (e.target.src =
+        "https://yuvaliacob.github.io/yuval-quiz-app/resources/bookmark_filled.png") // true
+    : (e.target.src =
+        "https://yuvaliacob.github.io/yuval-quiz-app/resources/bookmark.png"); // false
 }
+bookmarkButton.addEventListener("click", toggleBookmarkButton);
 
 // TOGGLE ANSWER //
 
