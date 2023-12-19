@@ -10,6 +10,7 @@ function toggleBookmarkButton(e) {
     : (e.target.src =
         "https://yuvaliacob.github.io/yuval-quiz-app/resources/bookmark.png"); // false
 }
+
 bookmarkButton.addEventListener("click", toggleBookmarkButton);
 
 // TOGGLE ANSWER //
