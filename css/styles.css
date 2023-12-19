@@ -72,6 +72,7 @@ main {
   background: white;
   text-align: center;
   position: relative;
+  word-break: break-word;
 }
 
 @media (prefers-color-scheme: dark) {
